@@ -11,4 +11,6 @@ options = {
   adapter: 'postgresql',
   database: 'ausab'
 }
-ActiveRecord::Base.establish_connection(options)
+# ActiveRecord::Base.establish_connection(options) #changed when deploying
+# cause Heroku can't talk to my database
+ActiveRecord::Base.establish_connection( ENV['DATABASE_URL'] || options)

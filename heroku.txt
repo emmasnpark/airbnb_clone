@@ -1,0 +1,7 @@
+copy all gem '' in Gemfile
+gem install bundle
+bundle install
+
+pg_dump -Fc --no-acl --no-owner -h localhost -U emma ausab > db.dump
+
+To check db_username => psql => \l
