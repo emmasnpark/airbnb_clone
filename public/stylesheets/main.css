@@ -1,0 +1,16 @@
+box {
+  box-sizing: border-box;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 20%,20%,20%,20%,20%;
+}
+
+.logo {
+  order: 0;
+}
+
+.nav_right {
+  order: 5;
+}

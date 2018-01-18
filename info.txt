@@ -1,0 +1,6 @@
+location flemington VIC Australia
+title Park & Sunrise Views
+guest 4
+beds 4
+bath 1
+kitchen Available

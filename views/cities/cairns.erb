@@ -1,0 +1,7 @@
+<h1>CAIRNS</h1>
+<% @houses.each do |house| %>
+<a href="/houses/<%= house.id %>">
+<img src="<%= house.house_image1 %>" alt="" width="500px", height="500px">
+<h1><%= house.title %></h1>
+</a>
+<% end %>
